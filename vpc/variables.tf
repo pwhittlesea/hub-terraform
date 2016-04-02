@@ -15,22 +15,6 @@ variable "stack_name" {
 }
 
 #
-# Cluster machines
-#
-variable "ecs_amis" {
-  default = {
-    eu-west-1 = "ami-77ab1504"
-  }
-}
-variable "instance_type" {
-  default = "m3.medium"
-  description = "The size machine to use for compute cluster machines."
-}
-variable "ssh_key_name" {
-  description = "The name of the SSH key to use to access compute cluster machines."
-}
-
-#
 # Networking
 #
 variable "internal_dns_tld" {
@@ -62,12 +46,4 @@ variable "availability_zones_2" {
   default = {
     eu-west-1 = "eu-west-1b"
   }
-}
-
-#
-# Tasks/Services
-#
-variable "task_family" {
-  default = "dev_"
-  description = "The prefix to put on all task definitions created. e.g. dev_task-name"
 }
