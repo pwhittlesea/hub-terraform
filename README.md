@@ -3,7 +3,7 @@ Terraform deployment configuration to deploy the https://github.com/flightstats/
 
 TODO
 - [x] Allow setup of a VPC if one does not already exist
-- [ ] Create a ZooKeeper cluster of a configurable size (default 3)
+- [x] Create a ZooKeeper cluster of a configurable size (default 3)
 - [ ] Create Dynamo DB tables (including IAM roles)
 - [ ] Create S3 bucket (including IAM roles)
 - [ ] Create a Hub cluster of a configurable size (default 3)
